@@ -43,7 +43,8 @@ It will also publish a battery status event at boot and every 4 hours; the first
 
 I made a few minor modifications and now it works great on the Electron, too. I removed the PowerShield support and used the [FuelGauge] (https://docs.particle.io/reference/firmware/electron/#fuelgauge) instead. I also increased the timeout to get online from 30 to 60 seconds, since it takes longer for cellular data to come up.
 
-The source is in accelwake_electron.cpp.
+The source is in [accelwake_electron.cpp] (https://github.com/rickkas7/AccelWake/blob/master/accelwake_electron.cpp).
 
+![Picture](electron.jpg)
 
 
