@@ -14,7 +14,7 @@ If you are building this source, you will need to use two libraries. They are bo
 * [PowerShield] (https://github.com/spark/PowerShield)
 * [ADXML362DMA] (https://github.com/rickkas7/ADXL362DMA)
 
-This code wasn't designed for use on the Electron, but by removing the PowerShield and using [FuelGauge] (https://docs.particle.io/reference/firmware/electron/#fuelgauge) instead, it should work fine.
+There's an updated version of the code below for the Electron that uses the built-in Electron FuelGauge instead of the PowerShield.
 
 Make the following connections between the ADXL362 breakout and the Photon:
 
@@ -39,7 +39,11 @@ Then the Photon will go back to sleep (even if it's still in motion). If there's
 
 It will also publish a battery status event at boot and every 4 hours; the first comma-separated field will be 0 (no movement).
 
+## Electron
 
+I made a few minor modifications and now it works great on the Electron, too. I removed the PowerShield support and used the [FuelGauge] (https://docs.particle.io/reference/firmware/electron/#fuelgauge) instead. I also increased the timeout to get online from 30 to 60 seconds, since it takes longer for cellular data to come up.
+
+The source is in accelwake_electron.cpp.
 
 
 
