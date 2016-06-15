@@ -47,4 +47,9 @@ The source is in [accelwake_electron.cpp] (https://github.com/rickkas7/AccelWake
 
 ![Picture](electron.jpg)
 
+## Electron with AssetTracker
+
+I also have a version that uses the LIS3DH accelerometer built into the Particle AssetTracker shield for the Electron to do wake on movement. It's here:
+
+[https://github.com/rickkas7/LIS3DH] (https://github.com/rickkas7/LIS3DH)
 
