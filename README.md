@@ -53,3 +53,9 @@ I also have a version that uses the LIS3DH accelerometer built into the Particle
 
 [https://github.com/rickkas7/LIS3DH] (https://github.com/rickkas7/LIS3DH)
 
+## Internet Button
+
+The [Particle Internet Button] (https://docs.particle.io/datasheets/particle-shields/#internet-button) includes an ADXL362 on the board. It's not really convenient to plug a PowerShield into the Internet Button, but the accerometer to wake still works well!
+
+The source is in [accelwake_internetbutton.cpp] (https://github.com/rickkas7/AccelWake/blob/master/accelwake_internetbutton.cpp).
+
